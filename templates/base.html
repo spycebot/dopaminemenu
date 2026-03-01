@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77R1WY0L18"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-77R1WY0L18');
+    </script>
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+    <meta name="google-adsense-account" content="ca-pub-5714407334718985">
+    <script src="{{ url_for('static', filename='terzo.js') }}"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Aldrich&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+
+	<!--
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Tillana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+	-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='terzo.css') }}">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5714407334718985"
+     crossorigin="anonymous"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div id="banner"><a href="/" class="header_one"><h1>Dopamine Menu</h1></a></div>
+    
+    <div id="content">
+    {% block body %}{% endblock %}
+    </div>
+
+    <div id="footer">
+	<a href="/"class="btn">&#127969;</a>
+        <a href="/terms" class="btn">Terms &#128462;</a>
+        <a href="/privacy" class="btn">Privacy &#127850;</a>
+        <a href="/contact" class="btn">Contact &#128382;</a>
+        <a href="/settings" class="btn">&#9881;</a>
+    </div>
+
+    <div id="sizeDisplay" class="output">:0)</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
+

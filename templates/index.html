@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Tillana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+	<script src="https://accounts.google.com/gsi/client" async></script>
+
+{% endblock %}
+
+{% block body %}
+
+<p>{{ p.date }}</p>
+
+<h2>{{ p.page_title}}</h2>
+
+<!--p>User is authenticated: {{ p.c_user.is_authenticated }}</p-->
+{% if p.c_user.is_authenticated %}
+	<p>User: {{ p.c_user.name }}</p>
+	<p>Email: {{ p.c_user.email }}</p>
+	<p><img src="{{ p.c_user.profile_pic }}" alt="Google profile pic"></img></p>
+	<p><a class="button" href="/user">User</a></p>
+	<p><a class="button" href="/logout">Logout</a></p>
+{% else %}
+	<p><a class="button" href="/login">Google Login</a></p>
+{% endif %}
+
+<hr>
+
+<p><code>Claude</code>: A dopamine menu is a personalized list of activities organized by how much time and energy they require, designed to help you find healthy ways to boost your mood and motivation throughout the day.</p>
+<h3>How to Create Your Dopamine Menu</h3>
+<ol>
+	<li>Divide activities into categories:
+	<ul>
+		<li>Appetizers - Quick 5-15 minute mood boosters you can do anytime (stretching, listening to a favorite song, stepping outside, petting your dog, doodling)</li>
+		<li>Entrees - Main activities that take 30 minutes to a few hours and provide deeper satisfaction (exercising, working on a hobby, calling a friend, cooking a nice meal, reading)</li>
+		<li>Sides - Things you can pair with less enjoyable tasks to make them more pleasant (listening to podcasts while cleaning, playing music while working, lighting a candle during admin tasks)</li>
+		<li>Desserts - High-dopamine activities you should enjoy in moderation since they can become unhealthy if overdone (social media scrolling, binge-watching shows, video games, online shopping)</li>
+	</ul>
+	</li>
+	<li>Make it personal: List activities you genuinely enjoy, not what you think you "should" enjoy. Your menu will look different from anyone else's.</li>
+	<li>Keep it visible: Put your menu somewhere you'll see it when you're feeling unmotivated, bored, or tempted to default to less healthy dopamine sources.</li>
+	<li>Use it strategically: When you need a boost, consult your menu based on how much time and energy you have available. This helps you make intentional choices rather than mindlessly reaching for your phone.</li>
+	<li>The goal is building awareness of what genuinely helps you feel good and creating easy access to those options when you need them.</li>
+</ol>
+<hr>
+<p><code>Gemini</code>: A Dopamine Menu (or "Dopamenu") is a curated list of activities designed to give you a healthy hit of dopamine without the "hangover" that comes from endless scrolling or binge-watching.
+
+<p>The goal isn't to ban pleasure, but to ensure you have a prepared list of intentional sparks for when you're bored, under-stimulated, or stressed.</p>
+
+<h3>How to Build Your Menu</h3>
+<p>Think of your menu like a real restaurant menu. You want a mix of quick snacks and hearty entrees so you can choose based on how much time and energy you actually have.</h3>
+
+<p>...</p>
+
+<h3>Implementation Tips</h3>
+<ul>
+	<li>Write it down: Don't keep it in your head. Put it on a physical piece of paper, a fridge whiteboard, or a pinned note on your phone.</li>
+
+	<li>Remove friction: If "Painting" is a Main Course, keep your supplies accessible. If you have to dig through a closet to find them, you’ll just pick up your phone instead.</li>
+
+	<li>Know your "Ingredients": Pay attention to what actually makes you feel better versus what just makes you feel numb.</li>
+</ul>
+<p>The Golden Rule: When you feel that "itch" to scroll, check your menu first. Pick a Starter or a Side before you're allowed to touch the Dessert.</p>
+
+<p>[Online tools can] help you brainstorm some specific activities based on your interests or your current daily routine[...]</p>
+
+{% endblock %}
+

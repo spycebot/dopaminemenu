@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Tillana&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='user.css') }}">
+	<script src="https://accounts.google.com/gsi/client" async></script>
+
+{% endblock %}
+
+{% block body %}
+
+<p>{{ p.date }}</p>
+
+<h2>{{ p.page_title}}</h2>
+
+<!--p>User is authenticated: {{ p.c_user.is_authenticated }}</p-->
+{% if p.c_user.is_authenticated %}
+	<p>User: {{ p.c_user.name }}</p>
+	<p>Email: {{ p.c_user.email }}</p>
+	<p><img src="{{ p.c_user.profile_pic }}" alt="Google profile pic"></img></p>
+	<p><a class="button" href="/user">User</a></p>
+	<p><a class="button" href="/logout">Logout</a></p>
+{% else %}
+	<p><a class="button" href="/login">Google Login</a></p>
+{% endif %}
+
+<hr>
+
+<form method="post">
+	<label for="user_textarea">New Blog Entry</label>
+	<textarea id="user_textarea" name="user_textarea" placeholder="Enter text here"></textarea>
+	<input type="submit" value="Save">
+</form>
+
+{{ p.user_textarea }}
+
+{% endblock %}
+

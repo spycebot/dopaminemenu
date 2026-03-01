@@ -1,0 +1,414 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<!-- Exo  -->
+	<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- Exo 2 (body) -->
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- Share Tech (fine print, input) -->
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">	
+	<!-- Share Tech Mono  -->
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<!-- Special Elite -->
+	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+	<!-- Syne Mono -->
+	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+	<!-- Tillana  -->
+	<link href="https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<!-- Rowdies -->
+	<link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- Smooch Sans -->
+	<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+	<!-- Montserrat -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- Zalando Sans Expanded -->
+	<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<!-- Bitcount -->
+	<link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&display=swap" rel="stylesheet">
+	<!-- Bitcount Single -->
+	<link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+	<!-- Saira -->
+	<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- Saira Semi Condensed (fine print) -->
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<!-- Baumans (body, input) -->
+	<link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+	<!-- Kelly Slab (output) -->
+	<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+	<!-- Passero One (header) -->
+	<link href="https://fonts.googleapis.com/css2?family=Passero+One&display=swap" rel="stylesheet">
+	<!-- Bruno Ace (header) -->
+	<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+	<!-- Aldrich (body) -->
+	<link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+	<!-- Asimovian (header) -->
+	<link href="https://fonts.googleapis.com/css2?family=Asimovian&display=swap" rel="stylesheet">
+	<!-- Geo (output) -->
+	<link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+	<!-- Electrolize (body) -->
+	<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+	<!-- Anta (input) -->
+	<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+	<!-- Ubuntu (body) -->
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<!-- Ubuntu Mono -->
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!-- SUSE (body) -->
+	<link href="https://fonts.googleapis.com/css2?family=SUSE:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- SUSE Mono (body, input) -->
+	<link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+	<!-- Space Mono (body) -->
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<!-- Jura (body) (love) -->
+	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+	<!-- Handjet (output) -->
+	<link href="https://fonts.googleapis.com/css2?family=Handjet:wght,ELSH@100..900,2&display=swap" rel="stylesheet">
+ 
+	<!--  -->
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+	<script src="https://accounts.google.com/gsi/client" async></script>
+
+{% endblock %}
+
+{% block body %}
+
+<h1>{{ page_title}}</h1>
+<p>Sunday 18 January 2026</p>
+
+<p>Welcome to the space.</p>
+
+<div class="exo">
+	<h3>Font choice Exo</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+<div class="share-tech-mono">
+	<h3>Font choice Share Tech Mono</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+<div class="special-elite">
+	<h3>Font choice Special Elite</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+<div class="syne-mono">
+	<h3>Font choice Syne Mono</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+<div class="rowdies">
+	<h3>Font choice Rowdies</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+<div class="smooch-sans">
+	<h3>Font choice Smooch Sans</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="tillana">
+	<h3>Font choice Tillana</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="montserrat">
+	<h3>Font choice Montserrat</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="zalando-sans">
+	<h3>Font choice Zalando Sans</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="bitcount">
+	<h3>Font choice Bitcount</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="bitcount-single">
+	<h3>Font choice Bitcount Single</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="saira">
+	<h3>Font choice Saira</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="saira-semi-condensed">
+	<h3>Font choice Saira Semi Condensed</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="baumans">
+	<h3>Font choice Baumans</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="kelly-slab">
+	<h3>Font choice Kelly Slab</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="passero-one">
+	<h3>Font choice Passero One</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="bruno-ace">
+	<h3>Font choice Bruno Ace</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="aldrich">
+	<h3>Font choice Aldrich</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="asimovian">
+	<h3>Font choice Asimovian</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="geo">
+	<h3>Font choice Geo</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="electrolize">
+	<h3>Font choice Electrolize</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="ubuntu">
+	<h3>Font choice Ubuntu</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="ubuntu-mono">
+	<h3>Font choice Ubuntu Mono</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="suse">
+	<h3>Font choice SUSE</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="suse-mono">
+	<h3>Font choice SUSE Mono</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="space-mono">
+	<h3>Font choice Space Mono</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="jura">
+	<h3>Font choice Jura</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+<div class="handjet">
+	<h3>Font choice Handjet</h3>
+	<p>Systems are better than personalities. Networks are better than individuals. Boffins come up with a better plan to manage the physical economy. A plan so comprehensive, it expects the unexpected, it anticipates the unlikely, and it operates smoothly with few moving parts..</p>
+	<ul>
+		<li>Systems over personalities.</li>
+		<li>Networks over individuals.</li>
+		<li>Scientific political economy.</li>
+	</ul>
+	<code>Person to person human networking (P2PHN) ideation: It is monolith on the moon time.</code>
+	<p class="fine-print">If people are told to do something they will do it. If people are allowed to do something they will do it. Profit motive is only one of several forces motivating human beings.</p>
+</div>
+
+{% endblock %}
+
